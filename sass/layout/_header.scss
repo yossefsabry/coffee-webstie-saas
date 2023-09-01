@@ -1,0 +1,82 @@
+header {
+  width: 100%;
+  height: fit-content;
+  background-color: $bg-color;
+  .container {
+    @include flex-between;
+    // bar
+    .menu {
+      display: none;
+      @include Screen {
+        display: block;
+      }
+      svg {
+        font-size: 1.5rem;
+        color: $primary-color;
+        cursor: pointer;
+      }
+    }
+    // nav
+    nav {
+      @include Screen {
+        display: none;
+      }
+      ul {
+        @include flex-center;
+        @include Screen {
+          flex-direction: column;
+          background-color: rgba(black, 0.4);
+          position: absolute;
+          left: 2rem;
+          top: 60px;
+          z-index: 2;
+          border-radius: 6px;
+        }
+        li {
+          padding: 0 1rem;
+          font-size: 1.3rem;
+          @include Screen {
+            padding: 16px 80px;
+          }
+          cursor: pointer;
+          a {
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -5px;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 0;
+              height: 2px;
+              background-color: $primary-color;
+              transition: all 0.2s ease-in-out;
+            }
+            &:hover {
+              &::after {
+                width: 120%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .logo {
+      @include flex-center;
+      cursor: pointer;
+      gap: 10px;
+      &:hover h2 {
+        opacity: 1;
+      }
+      svg {
+        font-size: 1.3rem;
+        color: $primary-color;
+      }
+      h2 {
+        color: $font-color;
+        opacity: 0.8;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}

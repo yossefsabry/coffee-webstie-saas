@@ -1,0 +1,36 @@
+
+// mixin overlay
+@mixin overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+// mixin prefixs
+@mixin prefixs($property, $value, $prefixs:  ()) {
+  @each $prefix in $prefixs {
+    #{ '-' + $prefix + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
+
+// mixin animation
+@mixin KeyFarmes($name) {
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

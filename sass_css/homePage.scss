@@ -1,0 +1,25 @@
+//  start helpers
+@import "../sass/helpers/variables";
+
+@import "../sass/helpers/mixen";
+
+@import "../sass/helpers/media";
+// end helpers
+
+// start layout
+@import "../sass/layout/grid";
+
+@import "../sass/layout/header";
+
+@import "../sass/layout/footer";
+
+@import "../sass/layout/global";
+// end layout
+
+// start components
+@import "../sass/components/buttens";
+
+// end components
+
+// main page
+@import "../sass/pages/homePage";

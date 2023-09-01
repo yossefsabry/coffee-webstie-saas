@@ -1,0 +1,402 @@
+// start hero section
+.hero {
+  width: 100%;
+  height: calc(100vh - 60px);
+  padding-top: 4rem;
+  background-image: url("../../images/circle-scatter-haikei.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  @include smallScreen {
+    padding-top: 2rem;
+  }
+  .container {
+    width: 100%;
+    @include flex-between;
+    flex-wrap: wrap;
+    .hero-content {
+      @include Screen {
+        width: 100%;
+        text-align: center;
+      }
+      width: 50%;
+      color: $font-color;
+      h1 {
+        font-family: "Kaushan Script", cursive;
+        font-family: "Mukta", sans-serif;
+        font-family: "Pacifico", cursive;
+        font-size: 6rem;
+        padding: 5px 0px;
+        margin: 0;
+        @include smallScreen {
+          font-size: 5rem;
+          margin: 10px;
+        }
+      }
+      h2 {
+        font-size: 3rem;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        @include smallScreen {
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+      }
+      p {
+        padding-bottom: 30px;
+        line-height: 20px;
+        color: $grey-color;
+      }
+      button {
+        @include btn1;
+        position: relative;
+        z-index: 3;
+      }
+    }
+    .img {
+      width: 50%;
+      img {
+        width: 60rem;
+        @include Screen {
+          display: none;
+        }
+      }
+    }
+  }
+}
+// end hero section
+//  start section two
+.section_two {
+  color: white;
+  background-image: url("../../images/image-balck-coffee.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  @include Screen {
+    height: 90vh;
+  }
+  @include smallScreen {
+    height: 125vh;
+  }
+  .container {
+    @include flex-between;
+    text-align: center;
+    @include Screen {
+      flex-direction: column;
+      text-align: center;
+    }
+    .content-one {
+      width: 50%;
+      h1 {
+        color: $font-color;
+        font-size: 4rem;
+        padding-bottom: 20px;
+        font-family: "Kaushan Script", cursive;
+        font-family: "Mukta", sans-serif;
+        font-family: "Pacifico", cursive;
+        @include Screen {
+          padding: 0;
+        }
+      }
+      button {
+        @include btn2;
+      }
+    }
+    .content-two {
+      text-align: center;
+      width: 50%;
+      @include Screen {
+        width: 100%;
+      }
+
+      img {
+        width: 35rem;
+        @include Screen {
+          padding-top: 20px;
+          width: 25rem;
+        }
+        @include smallScreen {
+          width: 18rem;
+          padding-top: 4rem;
+        }
+      }
+      p {
+        color: $font-color;
+        line-height: 40px;
+        padding-top: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// end section two
+// start section three
+.section_three {
+  padding-top: 5rem;
+  width: 100%;
+  .container {
+    width: 100%;
+    @include flex-center;
+    .content {
+      text-align: center;
+      img {
+        width: 100%;
+        max-width: 30rem;
+      }
+      p {
+        color: $font-color;
+        line-height: 1.8;
+        padding-top: 20px;
+        font-size: 17px;
+        color: $font-color;
+      }
+    }
+    .content {
+      h1 {
+        color: $font-color;
+        font: {
+          size: 5rem;
+          family: "Kaushan Script", cursive;
+          family: "Mukta", sans-serif;
+          family: "Pacifico", cursive;
+        }
+      }
+      button {
+        @include btn1;
+      }
+    }
+  }
+}
+// end seciton three
+
+// start section four
+.section_four {
+  padding-top: 3rem;
+  width: 100%;
+  .container {
+    width: 100%;
+    @include flex-between;
+    @include largeScreen {
+      flex-direction: column;
+    }
+    gap: 30px;
+    .content {
+      width: (100% - 2);
+      text-align: center;
+      img {
+        width: 100%;
+        max-width: 30rem;
+      }
+      p {
+        color: $font-color;
+        line-height: 1.8;
+        padding-top: 20px;
+        font-size: 17px;
+        color: $font-color;
+      }
+    }
+    .content {
+      h1 {
+        color: $font-color;
+        font: {
+          size: 5rem;
+          family: "Kaushan Script", cursive;
+          family: "Mukta", sans-serif;
+          family: "Pacifico", cursive;
+        }
+      }
+      button {
+        @include btn1;
+      }
+    }
+  }
+}
+// end section four
+// start section five
+.section_five {
+  padding-top: 3rem;
+  .container {
+    width: 100%;
+    text-align: center;
+    color: $font-color;
+    @include flex-center;
+    flex-direction: column;
+    h1 {
+      font: {
+        size: 5rem;
+        family: "Kaushan Script", cursive;
+        family: "Mukta", sans-serif;
+        family: "Pacifico", cursive;
+      }
+    }
+    img {
+      width: 100%;
+      max-width: 60rem;
+      @include smallScreen {
+        width: 110%;
+      }
+    }
+    button {
+      @include btn1;
+      @include smallScreen {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+// end section five
+// start Customer section
+.Customer {
+  padding-top: 4rem;
+  color: $font-color;
+  h2 {
+    padding-bottom: 20px;
+    text-align: center;
+    font: {
+      size: 5rem;
+      family: "Kaushan Script", cursive;
+      family: "Mukta", sans-serif;
+      family: "Pacifico", cursive;
+    }
+  }
+  .container {
+    width: 100%;
+    @include flex-between;
+    @include largeScreen {
+      flex-direction: column;
+    }
+    text-align: center;
+    gap: 30px;
+    .card {
+      width: 50%;
+      @include largeScreen {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        max-width: 30rem;
+      }
+      .img-round {
+        border-radius: 50%;
+      }
+      h2 {
+        font: {
+          size: 3rem;
+          family: "Kaushan Script", cursive;
+          family: "Mukta", sans-serif;
+          family: "Pacifico", cursive;
+        }
+        padding: 20px 0;
+      }
+      p {
+        color: $font-color;
+        line-height: 1.8;
+        padding-top: 20px;
+        font-size: 17px;
+        color: $font-color;
+        @include largeScreen {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+// end customer section
+// start section open
+
+.data_open {
+  margin-top: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  background-image: url("../../images/bg-data.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $font-color;
+  .container {
+    width: 100%;
+    @include flex-between;
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+    h2 {
+      font: {
+        size: 5rem;
+        family: "Kaushan Script", cursive;
+        family: "Mukta", sans-serif;
+        family: "Pacifico", cursive;
+      }
+    }
+    .data {
+      display: block;
+      text-align: center;
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+// end section open
+// start branchs
+.branchs {
+  width: 100%;
+  padding-top: 3rem;
+  color: $font-color;
+  h2 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    font: {
+      size: 5rem;
+      family: "Kaushan Script", cursive;
+      family: "Mukta", sans-serif;
+      family: "Pacifico", cursive;
+    }
+  }
+  .container {
+    width: 100%;
+    @include flex-between;
+    gap: 20px;
+    @include largeScreen {
+      flex-direction: column;
+    }
+    text-align: center;
+    .card {
+      width: (100% / 3);
+      @include largeScreen {
+        width: (100%);
+      }
+      img {
+        width: 100%;
+        max-width: 25rem;
+        border-radius: 6px;
+        @include smallScreen {
+          min-width: 10rem;
+        }
+      }
+      h2 {
+        padding-top: 20px;
+        font-size: 30px;
+        padding-bottom: 5px;
+        a {
+          color: $primary-color;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      p {
+        line-height: 1.8;
+        font-size: 17px;
+      }
+    }
+  }
+}
+// end branchs

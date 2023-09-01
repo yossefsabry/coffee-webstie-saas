@@ -1,0 +1,26 @@
+.container {
+  padding: 1rem 8rem;
+  @include smallScreen {
+    padding: 1rem 2rem;
+  }
+}
+
+#btn-top {
+  background-color: rgb(19 19 20 / 70%);
+  color: white;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 16px;
+  border-radius: 50%;
+  display: none;
+  &:hover {
+    background-color: rgb(19 19 20 / 90%);
+  }
+}
